@@ -17,13 +17,13 @@ main{
     border-radius: 12%;
 }
 header{
-font-family: 'Barrio', cursive;
+font-family: 'Oswald', sans-serif;
 }
 h2:hover{
     color: grey;
     cursor: pointer;
 }
 .user-info{
-    font-family: 'Metamorphous', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
