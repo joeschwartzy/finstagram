@@ -2,6 +2,7 @@ header{
     background-color: #244751;
     color: #E8FDFF;
     padding-left: 50px;
+    font-family: 'Oswald', sans-serif;
 }
 body{
     background-color: whitesmoke;
@@ -16,9 +17,6 @@ main{
 .post .user-info img {
     border-radius: 12%;
 }
-header{
-font-family: 'Oswald', sans-serif;
-}
 h2:hover{
     color: grey;
     cursor: pointer;
@@ -26,4 +24,11 @@ h2:hover{
 .user-info{
     font-family: 'Oswald', sans-serif;
 }
+.form-group{
+    color: #4A4847;
+    padding-left: 70px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
 
