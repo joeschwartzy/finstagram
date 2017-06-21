@@ -10,7 +10,25 @@ get '/' do
 end
 
 post '/posts' do
-    params.to_s
+  photo_url = params[:photo_url]
+
+  @post = Post.new({ photo_url: photo_url, user_id: current_user.id })
+
+  if @post.save
+    redirect(to('/'))
+  else
+    erb(:"posts/new")
+  end
+end
+
+get '/posts/new' do
+    @post = Post.new
+    erb(:"posts/new")
+end
+
+get '/posts/:id' do
+    @post = Post.find(params[:id])
+    erb(:"posts/show")
 end
   
 get '/signup' do
